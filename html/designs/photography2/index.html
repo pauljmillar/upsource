@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<title>Photos by Jane</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="icon" href="./img/photography_favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ #menu {
+  position: fixed;
+  left: 3%;
+  top: 30%;
+} 
+#menu2 {
+  position: fixed;
+  left: 3%;
+  top: 40%;
+}  
+</style>  
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px">
+  <img class="w3-image" src="./img/photog_front.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-xlarge w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Jane Jones</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">Jane Jones</h5>
+    <h3 class="w3-hide-medium w3-hide-small">photography</h3>
+  </div>
+ 
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-black w3-animate-right w3-center w3-top w3-text-light-grey" style="z-index:3;width:150px;font-weight:bold;display:none;right:0;" id="mySidenav">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-padding-32">CLOSE</a> 
+  <a href="#portfolio" onclick="w3_close()" class="w3-padding-16">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-padding-16">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-padding-16">CONTACT</a>
+</nav>
+
+<a href="/designs"  id="menu" class="w3-btn w3-btn-floating-large w3-red"> <i class="fa fa-reply"></i></a>
+<a href="../downloads/photography2.zip"  onclick="ga('send', {hitType: 'event',  eventCategory: 'Template',  eventAction: 'download',  eventLabel: 'photography2'});" target="_blank" id="menu2" class="w3-btn w3-btn-floating-large w3-red"> <i class="fa fa-cloud-download"></i></a>
+  
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-transparent w3-xlarge w3-padding-16">
+  <a href="javascript:void(0)" class="w3-right w3-btn  w3-transparent" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+</header>
+
+
+
+<!-- Page content -->
+<div class="w3-content w3-padding-xlarge w3-margin-top" id="portfolio">
+
+  <!-- Images (Portfolio) -->
+  <img src="./img/wedding_bw.jpg"  alt="Ocean" class="w3-image" width="1000" height="500">
+  <img src="./img/family1.jpg"  alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="./img/couple2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="./img/couple3.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="./img/family2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="./img/wedding_feet.jpg"  alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="./img/family3.jpg"  alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">14+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-btn w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+
+
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16">Prices</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card-2 w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Wedding</li>
+          <li class="w3-padding-16">6 hours</li>
+          <li class="w3-padding-16">~500 images</li>
+          <li class="w3-padding-16">3 settings</li>
+          <li class="w3-padding-16">25 prints included</li>
+          <li class="w3-padding-16">
+            <h2>$ 250</h2>
+            <span class="w3-opacity">set price</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-btn w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <ul class="w3-ul w3-center w3-card-2 w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Engagement</li>
+          <li class="w3-padding-16">2 hours</li>
+          <li class="w3-padding-16">~100 images</li>
+          <li class="w3-padding-16">3 settings</li>
+          <li class="w3-padding-16">5 prints included</li>
+          <li class="w3-padding-16">
+            <h2>$100 </h2>
+            <span class="w3-opacity">set price</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-btn w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-center w3-card-2 w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Family</li>
+          <li class="w3-padding-16">2 hours</li>
+          <li class="w3-padding-16">~100 images</li>
+          <li class="w3-padding-16">3 settings</li>
+          <li class="w3-padding-16">5 prints included</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per hour</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-btn w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>      
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+  <!-- End About Section -->
+  </div>
+  
+  
+  
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-xlarge w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center">Contact</h3>
+    <hr>
+    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
+
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-group">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-group">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-group">
+        <label>Message</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-btn w3-btn-block w3-padding-12 w3-dark-grey">Send</button>
+    </form><br>
+  </div>
+
+<!-- End page content -->
+</div>
+  
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+   <i class="fa fa-instagram w3-hover-text-purple"></i>
+  <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+  <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+  <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+  <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  <p class="w3-medium">Powered by <a href="http://www.upsourceworks.com/designs" target="_blank" class="w3-hover-text-green">upsource designs</a></p>
+</footer>
+  
+  
+<script>
+// Toggle grid padding
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+    } else { 
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+}
+
+// Open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.width = "30%";
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+  
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script> 
+  $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});  
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91834286-1', 'auto');
+  ga('send', 'pageview');
+
+</script>     
+   
+</body>
+</html>

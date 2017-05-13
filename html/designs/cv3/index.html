@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<title>My Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"-->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<!--link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css"-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="./img/favicon-bicycle.ico" type="image/x-icon" />
+
+  <style>
+/**font-family: 'Raleway', sans-serif;**/
+body,h1,h2,h3,h4,h5,h6 {font-family: "Muli", sans-serif; }
+body, html {
+    /**height: 100%;**/
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    /**background-image: url("./img/face1.jpg");**/
+    min-height: 100%;
+}
+.w3-navbar li a {
+    padding: 16px;
+    float: left;
+}
+ #menu {
+  position: fixed;
+  left: 3%;
+  top: 30%;
+}   
+#menu2 {
+  position: fixed;
+  left: 3%;
+  top: 40%;
+}  
+.w3-navbar{
+    background:transparent;
+    border:none !important;
+}    
+</style>
+<body class="w3-text-theme">
+
+<div class="w3-top w3-white ">
+  <h2 style="text-align:center" class="w3-margin w3-text-grey ">Jeff Wilson</h2>
+
+  <div class="w3-navbar w3-white w3-text-grey w3-hide-small" style="text-align:center">
+    <button class="w3-bar-item w3-button tablink w3-white w3-text-blue-grey" onclick="openContent(event,'about')">ABOUT</button>
+    <button  class="w3-bar-item w3-button tablink w3-white " onclick="openContent(event,'work')">WORK</button>
+    <button  class="w3-bar-item w3-button tablink w3-white " onclick="openContent(event,'interests')">INTERESTS</button>
+    <button  class="w3-bar-item w3-button tablink w3-white  " onclick="openContent(event,'contact')">CONTACT</button>
+ </div>
+  
+  <!--mobile-->
+  <div class="w3-navbar w3-white w3-text-grey w3-hide-medium w3-hide-large w3-margin-bottom" style="text-align:center">
+    <i class="fa fa-info fa-2x  w3-button  w3-white tablink3 w3-text-blue-grey" onclick="openContentMobile(event,'about')"></i>
+    <a  class="fa fa-2x fa-building  w3-button w3-white tablink3" onclick="openContentMobile(event,'work')"></a>
+    <i  class="fa fa-2x fa-pied-piper w3-button  w3-white tablink3" onclick="openContentMobile(event,'interests')"></i>
+    <i  class="fa fa-2x fa-twitter  w3-button  w3-white  tablink3" onclick="openContentMobile(event,'contact')"></i>
+ </div>  
+  
+</div><!--end top-->
+  
+<a href="/designs"  id="menu" class="w3-btn w3-btn-floating-large w3-red"> <i class="fa fa-reply"></i></a>
+<a href="../downloads/cv3.zip"  onclick="ga('send', {hitType: 'event',  eventCategory: 'Template',  eventAction: 'download',  eventLabel: 'cv3'});" target="_blank" id="menu2" class="w3-btn w3-btn-floating-large w3-red"> <i class="fa fa-cloud-download"></i></a>
+
+  
+<!-- About Section -->
+<div id="about" class="w3-container w3-border-0 city w3-animate-opacity w3-text-grey " style="padding-top:200px;">
+    <div class="w3-row" >
+      <div class="w3-third w3-display-container w3-hide-small" style="height:200px;">
+        <img class="w3-image w3-circle w3-display-right " src="./img/face_small.jpg" alt="me" style="height:200px; margin-top:100px;" >
+      </div>
+      
+       <!--mobile-->
+      <div class="w3-container w3-hide-medium w3-hide-large w3-center " style="height:200px;">
+        <img class="w3-image w3-circle  " src="./img/face_small.jpg" alt="me" style="height:200px; " >
+      </div>
+      
+      <div class="w3-rest w3-display-container w3-padding-jumbo">    
+        <p class="">Hi, I'm Jeff. </p>
+        <p class="">I wanted to design cars when I was 9 </p>
+  
+         <p class="" >I currently live in Oakland, CA.  I have spent 9 years in the printing and <a href="#">typesetting</a> industry. Lorem Ipsum has been the industry's survived not only <a href="#">five</a> centuries, but also the leap into electronic <a href="#">typesetting</a>, remaining <a href="#">essentially</a> unchanged, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+ <div style=""><a href="#experience" class="w3-button  w3-middle w3-grey w3-text-white w3-medium w3-margin-top  ">resume</a></div>
+ 
+    </div>
+  </div>
+</div><!--end about-->
+
+<!-- Work Section -->
+<div id="work" class="w3-container w3-border-0 city w3-animate-opacity" style="padding-top:200px; display:none" >
+ <!-- experience on large screen -->
+  <div class="w3-row w3-hide-small">
+    <div class="w3-third ">
+      
+      <table class="w3-table w3-border-0 w3-text-black" style="margin-top:100px;">
+
+        <tr><td class="w3-right-align"><button  class="w3-bar-item w3-button tablink2 w3-white w3-text-blue-grey" onclick="openWork(event,'First')">Jun 2013 - CURRENT</button></td></tr>
+        <tr><td class="w3-right-align"><button  class="w3-bar-item w3-button tablink2 w3-white " onclick="openWork(event,'Second')">Jan 2009 - Jun 2013</button></td></tr>
+        <tr><td class="w3-right-align"><button  class="w3-bar-item w3-button tablink2 w3-white " onclick="openWork(event,'Third')">Jan 2001 - Jan 2009</button></td></tr>
+      </table>
+    
+    </div>
+      <div class="w3-rest w3-display-container w3-padding-jumbo w3-align-left w3-text-grey ">    
+
+  <div id="First" class="w3-container job" style="">
+    <h2><b>Design Analyst,</b> Lamor Industries</h2>
+    <p>Created 14 first model designs</p>
+    <p>Added $1.2 million in revenue in new client acquisition.</p>
+    <p>Only analyst to receive Gold award 3 years in a row (and running).</p>
+    <p>After our staff was reduced by 1/3, our team has continued to receive glowing praise from our clients.  All the while, we have increased our net client load, and reduced our number of monthly delays by 70%.</p>
+</div>
+
+  <div id="Second" class="w3-container job" style="display:none">
+    <h2><b>Design Lead,</b> Goldstein Capital</h2>
+    <p>Only analyst to receive Gold award 3 years in a row (and running).</p>
+   <p>Created 14 first model designs</p>
+    <p>After our staff was reduced by 1/3, our team has continued to receive glowing praise from our clients.  All the while, we have increased our net client load, and reduced our number of monthly delays by 70%.</p>
+    <p>Added $1.2 million in revenue in new client acquisition.</p>
+  </div>
+
+  <div id="Third" class="w3-container job" style="display:none">
+    <h2><b>Analyst,</b> Jobinski Industries</h2>
+    <p>Created 14 first model designs</p>
+    <p>Added $1.2 million in revenue in new client acquisition.</p>
+    <p>Only analyst to receive Gold award 3 years in a row (and running).</p>
+    <p>After our staff was reduced by 1/3, our team has continued to receive glowing praise from our clients.  All the while, we have increased our net client load, and reduced our number of monthly delays by 70%.</p>
+  </div>
+
+</div>
+    </div>
+  
+    <!--experience on mobile --> 
+    <div class="w3-row-padding w3-hide-medium w3-hide-large">
+
+
+  
+<!--jobs on mobile-->
+
+  <div id="" class="w3-card-4" >
+    <div class="w3-container">
+      <h4><b>Design Analyst,</b> Lamor Industries</h4>
+      <p><b>Jun 2013 - CURRENT</b></pp>
+      <p>Created 14 first model designs</p>
+      <p>Added $1.2 million in revenue in new client acquisition.</p>
+      <p>Only analyst to receive Gold award 3 years in a row (and running).</p>
+      <p>After our staff was reduced by 1/3, our team has continued to receive glowing praise from our clients.  All the while, we have increased our net client load, and reduced our number of monthly delays by 70%.</p>
+    </div>
+  </div>
+<br>
+  
+  <div id="" class="w3-card-4" >
+    <div class="w3-container">
+      <h4><b>Design Lead,</b> Goldstein Capital</h4>
+      <p><b>Jan 2009 - Jun 2013</b></pp>
+      <p>Only analyst to receive Gold award 3 years in a row (and running).</p>
+      <p>Created 14 first model designs</p>
+      <p>After our staff was reduced by 1/3, our team has continued to receive glowing praise from our clients.  All the while, we have increased our net client load, and reduced our number of monthly delays by 70%.</p>
+      <p>Added $1.2 million in revenue in new client acquisition.</p>
+    </div>
+  </div>
+  <br>
+
+  <div id="" class="w3-card-4">
+     <div class="w3-container">
+      <h4><b>Analyst,</b> Jobinski Industries</h4>
+      <p><b>Jan 2001 - Jan 2009</b></pp>
+      <p>Created 14 first model designs</p>
+      <p>Added $1.2 million in revenue in new client acquisition.</p>
+      <p>Only analyst to receive Gold award 3 years in a row (and running).</p>
+      <p>After our staff was reduced by 1/3, our team has continued to receive glowing praise from our clients.  All the while, we have increased our net client load, and reduced our number of monthly delays by 70%.</p>
+    </div>
+  </div>
+ <br> 
+</div>
+      </div>
+
+  
+  
+<!-- Interests Section -->
+<div id="interests" class="w3-container w3-border-0 city w3-animate-opacity w3-text-grey " style="padding-top:200px;display:none">
+    <div class="w3-row" >
+      <div class="w3-third w3-display-container w3-hide-small" style="height:200px;">
+        <img class="w3-image w3-circle w3-display-right " src="./img/moto.jpg" alt="bike" style="height:200px; margin-top:100px;" >
+      </div>
+      
+       <!--mobile-->
+      <div class="w3-container w3-hide-medium w3-hide-large w3-center " style="height:200px;">
+        <img class="w3-image w3-circle  " src="./img/moto.jpg" alt="bike" style="height:200px; " >
+      </div>
+      <div class="w3-rest w3-display-container w3-padding-jumbo">    
+        <p class="">On weekends, I love working on my motorcycle. </p>
+        <p class="">It is a 1990 BMW. I have rebuilt the engine.  I follow <a href="#">@abc123</a>, <a href="">@motoman</a>, and <a href="">@builder3221</a> </p>
+  
+         <p class="" >I also like playing soccer and <a href="#">typesetting</a>. Most of my time is spent with my kids <a href="#">five</a> centuries, but also the leap into electronic <a href="#">typesetting</a>, remaining <a href="#">essentially</a> unchanged, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+ 
+    </div>
+  </div>
+</div><!--end interests-->
+  
+<!-- Contact Section -->
+<div id="contact" class="w3-container w3-border-0 city w3-animate-opacity w3-text-grey " style="padding-top:200px; display:none">
+    <div class="w3-row" >
+      <div class="w3-third w3-display-container w3-hide-small" style="height:200px;">
+        <img class="w3-image w3-circle w3-display-right " src="./img/mananddog.jpg" alt="together" style="height:200px; margin-top:100px;" >
+      </div>
+      
+       <!--mobile-->
+      <div class="w3-container w3-hide-medium w3-hide-large w3-center " style="height:200px;">
+        <img class="w3-image w3-circle  " src="./img/mananddog.jpg" alt="together" style="height:200px; " >
+      </div>
+      <div class="w3-rest w3-display-container w3-padding-jumbo">    
+        <p class="">On twitter I'm <a href="#">@jeffG4ce</a> </p>
+        <p class="">You can send me a linkedIn message <a href="#">here</a> </p>
+        <p class="">On Instagram I'm  <a href="#">@jeffG4ce</a> </p>
+        <p class="">Send me an email: </p>
+ <div style=""><a href="#experience" class="w3-button  w3-middle w3-grey w3-text-white w3-medium w3-margin-top  ">email</a></div>
+ 
+    </div>
+  </div>
+</div><!--end contact-->
+  
+  
+    <div class="w3-display-bottomleft w3-padding-large w3-text-black w3-hide-small w3-hide-medium">
+  <div class="w3-left w3-padding-large w3-text-black">
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-flickr w3-hover-text-red"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>
+      </div>      
+  </div>
+  
+  <!-- mobile-->
+  <div class=" w3-padding-large w3-text-black w3-hide-large" style="text-align:center">
+    <div class=" w3-padding-large w3-text-black">
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+        <i class="fa fa-flickr w3-hover-text-red"></i>
+        <i class="fa fa-instagram w3-hover-text-purple"></i>
+        <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+        <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+      </div>
+    </div>        
+  </div>
+  
+<script>
+function openContent(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-text-blue-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-text-blue-grey";  
+}
+
+function openContentMobile(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink3");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-text-blue-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-text-blue-grey";  
+}  
+
+ function openWork(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("job");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink2");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-text-blue-grey", ""); 
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-text-blue-grey";
+}
+</script>
+
+
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91834286-1', 'auto');
+  ga('send', 'pageview');
+
+</script>   
+
+</body>
+</html>

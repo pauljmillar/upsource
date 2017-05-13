@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>Join us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="./img/favicon-bus.ico" type="image/x-icon" />
+  <style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('./img/foodtruck1.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#menu {
+  position: fixed;
+  left: 3%;
+  top: 30%;
+}      
+#menu2 {
+  position: fixed;
+  left: 3%;
+  top: 40%;
+}  
+</style>
+<body>
+ <a href="/designs"  id="menu" class="w3-btn w3-btn-floating-large w3-red"> <i class="fa fa-reply"></i></a>
+ <a href="../downloads/restaurant1.zip"  onclick="ga('send', {hitType: 'event',  eventCategory: 'Template',  eventAction: 'download',  eventLabel: 'restaurant1'});" target="_blank" id="menu2" class="w3-btn w3-btn-floating-large w3-red"> <i class="fa fa-cloud-download"></i></a>
+
+<!--display on large screen-->
+<div class="bgimg w3-display-container w3-text-white w3-hide-small">
+  <div class="w3-display-topmiddle w3-jumbo w3-padding-jumbo ">
+    <p><b>Coffee Bus</b></p>
+  </div>
+  <div class="w3-display-topleft w3-padding-jumbo w3-xlarge ">
+    <p><button onclick="document.getElementById('foodmenu').style.display='block'" class="w3-button w3-yellow ">menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-yellow">find us today</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-jumbo">
+    <p class="w3-xlarge">monday - friday 10-23 | saturday 14-02</p>
+    <p class="w3-large">42 village St, New York</p>
+
+    <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-flickr w3-hover-text-red"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>  </div>
+</div>
+
+  <!--display on mobile-->
+  <div class="bgimg w3-display-container w3-text-white w3-hide-medium w3-hide-large w3-center">
+  <div class=" w3-xxlarge w3-padding-jumbo ">
+    <p><b>Coffee Bus</b></p>
+  </div>
+  <div class="  w3-padding-jumbo w3-xlarge ">
+    <p><button onclick="document.getElementById('foodmenu').style.display='block'" class="w3-button w3-yellow">menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-yellow">find us today</button></p>
+  </div>
+  <div class="">
+    <p class="">monday - friday 10-23 | saturday 14-02</p>
+    <p class="">42 village St, New York</p>
+  </div>
+  <!-- social -->
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-flickr w3-hover-text-red"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>
+    
+  </div>
+  
+<!-- Menu Modal -->
+<div id="foodmenu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('foodmenu').style.display='none'" class="w3-closebtn w3-xxlarge w3-hover-text-grey">x</span>
+      <h1>Starters</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Tomato Soup <b>$2.50</b></h5>
+      <h5>Chicken Salad <b>$3.50</b></h5>
+      <h5>Bread and Butter <b>$1.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Main Courses</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Grilled Fish and Potatoes <b>$8.50</b></h5>
+      <h5>Italian Pizza <b>$5.50</b></h5>
+      <h5>Veggie Pasta <b>$4.00</b></h5>
+      <h5>Chicken and Potatoes <b>$6.50</b></h5>
+      <h5>Deluxe Burger <b>$5.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Fruit Salad <b>$2.50</b></h5>
+      <h5>Ice cream <b>$2.00</b></h5>
+      <h5>Chocolate Cake <b>$4.00</b></h5>
+      <h5>Cheese <b>$5.50</b></h5>
+    </div>
+  </div>
+</div>
+
+
+  <!-- newsletter modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-card-8 w3-animate-zoom w3-padding-jumbo w3-round" style="max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-closebtn w3-hover-text-grey w3-margin">x</span>
+  
+      <!--form>
+        <input class="w3-input " type="text" placeholder="email" name="email">
+      </form>
+        <div class="w3-middle">
+          <button onclick="document.getElementById('contact').style.display='none'" type="button" class="w3-btn w3-black w3-round w3-margin">Join</button>
+        </div-->
+      
+<a class="twitter-timeline" href="https://twitter.com/upsourceworks" data-tweet-limit="1">Tweets by upsourceworks</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>  </div>
+</div>
+  
+</body>
+</html>

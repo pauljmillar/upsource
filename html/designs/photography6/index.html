@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<title>Aigar Art</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Wedding photographer">    
+<meta name="keywords" keywords="aberdeen, scotland, edinburgh, aberdeenshire, union street, nikon, d4s, bowens, photo equipment, mobile, professional, photographer, photographers, fashion, freelance, photo shooting, raw, editing, photoshop, studio, lights, street, budeor, portfolio, still life, ">	
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--link rel="icon" href="./img/favicon-bicycle.ico" type="image/x-icon" /-->
+<link rel="icon" href="./img/favicon.png" type="image/x-icon" />
+  
+  
+  <style>
+/**font-family: 'Raleway', sans-serif;**/
+body,h1,h2,h3,h4,h5,h6 {font-family: "Muli", sans-serif; }
+body, html {
+    /**height: 100%;**/
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    /**background-image: url("./img/face1.jpg");**/
+    min-height: 100%;
+}
+.w3-navbar li a {
+    padding: 16px;
+    float: left;
+}
+ 
+.w3-navbar{
+    background:transparent;
+    border:none !important;
+}    
+div.scrollmenu {
+    background-color: #fff;
+    overflow: auto;
+    white-space: nowrap;
+}
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}      
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  
+  <div class="w3-bar w3-white  "  id="myNavbar" style="padding-top:20px; padding-bottom:10px">
+
+    <button onclick="openContent(event,'home')" class="w3-bold w3-button w3-large w3-border-0 w3-bar-item tablink w3-hover-white" style="margin-left:30px; text-decoration:none;padding:0 0 0 0" ><img src="./img/aart_small.jpg" style="height:70px"/></button>
+    <!-- Right-sided navbar links -->
+       <a class="w3-bar-item w3-right w3-hide-small w3-white w3-hover-white tablink  w3-small w3-text-grey " href="https://www.facebook.com/aigarart" style="margin-right:30px"> <i class="fa fa-facebook "></i></a>
+       <a class="w3-bar-item w3-right w3-hide-small w3-white w3-hover-white tablink  w3-small w3-text-grey " href="https://www.facebook.com/Real-estate-and-commercial-photographer-612833548916773/?ref=aymt_homepage_panel" style="align:center;width:37px"> <i class="fa fa-facebook-official "></i></a>
+       <button onclick="openContent(event,'contact')"    class="w3-bar-item w3-right w3-hide-small w3-button w3-medium tablink" >Contact</a>
+       <button onclick="openContent(event,'about')"    class="w3-bar-item w3-right w3-hide-small w3-button w3-medium tablink" >About</a>
+       <button onclick="openContent(event,'commercial')" class="w3-bar-item w3-right w3-hide-small w3-button w3-medium tablink" >Commercial</button>
+       <button onclick="openContent(event,'property')"   class="w3-bar-item w3-right w3-hide-small w3-button w3-medium tablink" >Property</button>
+       <button onclick="openContent(event,'beauty')"     class="w3-bar-item w3-right w3-hide-small w3-button w3-medium tablink" >Beauty</button>
+       <button onclick="openContent(event,'fashion')"    class="w3-bar-item w3-right w3-hide-small w3-button w3-medium tablink" >Fashion</button>
+       <button onclick="openContent(event,'portraits')"    class="w3-bar-item w3-right w3-hide-small w3-button w3-medium tablink" >Portraits</button>
+       <button onclick="openContent(event,'wedding')"    class="w3-bar-item w3-right w3-hide-small w3-button w3-medium tablink" >Wedding</button>
+    
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+      </a>
+    <h1 class="w3-center"><b></b></h1>
+</div>
+</div>
+
+<!-- Sidenav on small screens when clicking the menu icon -->
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-right w3-hide-medium w3-hide-large" style="z-index:3;display:none; right:0; top:0" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a>
+    <a href="javascript:void(0)" onclick="openContent(event,'home')" class="w3-medium tablink" style="" >Home</a>
+       <a href="javascript:void(0)" onclick="openContent(event,'contact')"    class=" w3-medium tablink " >Contact</a>
+       <a href="javascript:void(0)" onclick="openContent(event,'about')"    class=" w3-medium tablink " >About</a>
+       <a href="javascript:void(0)" onclick="openContent(event,'commercial')" class=" w3-medium tablink " >Commercial</a>
+       <a href="javascript:void(0)"  onclick="openContent(event,'property')"   class=" w3-medium tablink" >Property</a>
+       <a href="javascript:void(0)" onclick="openContent(event,'beauty')"     class=" w3-medium tablink" >Beauty</a>
+       <a href="javascript:void(0)" onclick="openContent(event,'fashion')"    class="w3-medium tablink" >Fashion</a>
+       <a href="javascript:void(0)" onclick="openContent(event,'portraits')"    class="w3-medium tablink" >Portraits</a>
+       <a href="javascript:void(0)" onclick="openContent(event,'wedding')"    class="w3-medium tablink" >Wedding</a>
+</nav>
+  
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+<!-- Home Section -->
+<div id="home" class="w3-main w3-content w3-border-0 city w3-animate-opacity" style="max-width:4600px;">
+    <div class="w3-row  scrollmenu " style="margin-top:30px; margin-left: 30px; margin-right:30px">
+      <img src="./img/portraits/DSC_6152 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_6085 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_6044 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_6030 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_9751.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_7437.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_7406.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_7396.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_7385.jpg" style="height:550px"  alt="">
+      <img src="./img/beauty/Evelina-large.jpg" style="height:550px"  alt="">
+      <img src="./img/beauty/DSC_2195.jpg" style="height:550px"  alt="">
+      <img src="./img/beauty/DSC_2674.jpg" style="height:550px"  alt="">
+      <img src="./img/beauty/DSC_2698art.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_93821.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_9967.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_9950.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_9379.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_0938.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_07431.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_0748.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_0738 copy.jpg" style="height:550px"  alt="">
+  </div>
+</div><!--end about-->
+
+<!-- Portaits Section -->
+<div id="portraits" class="w3-main w3-content w3-border-0 city w3-animate-opacity" style="max-width:4600px; display:none">  
+  <div   class="w3-row  scrollmenu " style="margin-top:30px; margin-left: 30px; margin-right:30px">
+      <img src="./img/portraits/DSC_6152 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_6085 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_6044 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_6030 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_5990 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_5975 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_1958.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_9067 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_8878.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_7744.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_2917.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_5509history.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_5416history.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_5582.jpg" style="height:550px"  alt="">
+      <img src="./img/portraits/DSC_71213.jpg" style="height:550px"  alt="">
+  </div>
+</div><!--End Portraits-->  
+ 
+<!-- Wedding Section -->
+<div id="wedding" class="w3-main w3-content w3-border-0 city w3-animate-opacity" style="max-width:4600px; display:none">  
+  <div   class="w3-row  scrollmenu " style="margin-top:30px; margin-left: 30px; margin-right:30px">
+      <img src="./img/wedding/DSC_9751.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_7437.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_7406.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_7396.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_7385.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_7375.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_93821.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_9967.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_9950.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_9379.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_0938.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_07431.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_0748.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_0738 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_0732 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_0637 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_0599.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_5869.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_8029 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_5941 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_5907 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_5849.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_5807.jpg" style="height:550px"  alt="">
+      <img src="./img/wedding/DSC_0713 copy.jpg" style="height:550px"  alt="">  
+  </div>
+</div><!--End Wedding-->  
+
+<!-- Fashion Section -->
+<div id="fashion" class="w3-main w3-content w3-border-0 city w3-animate-opacity" style="max-width:4600px; display:none">  
+  <div   class="w3-row  scrollmenu " style="margin-top:30px; margin-left: 30px; margin-right:30px">
+      <img src="./img/fashion/DSC_1100.jpg" style="height:550px"  alt="">
+      <img src="./img/fashion/DSC_2424.jpg" style="height:550px"  alt="">
+      <img src="./img/fashion/DSC_5587hist.jpg" style="height:550px"  alt="">
+      <img src="./img/fashion/DSC_5706art.jpg" style="height:550px"  alt="">
+      <img src="./img/fashion/Iveta ebinbra12.jpg" style="height:550px"  alt="">
+  </div>
+</div><!--End Fashion-->    
+
+<!-- Commercial Section -->
+<div id="commercial" class="w3-main w3-content w3-border-0 city w3-animate-opacity" style="max-width:4600px; display:none">  
+  <div   class="w3-row  scrollmenu " style="margin-top:30px; margin-left: 30px; margin-right:30px">
+      <img src="./img/commercial/DSC_2737 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/commercial/DSC_2742 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/commercial/DSC_2745 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/commercial/DSC_2769 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/commercial/DSC_2774 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/commercial/DSC_2781 copy.jpg" style="height:550px"  alt="">
+  </div>
+</div><!--end Commercial-->    
+  
+<!-- Property Section -->
+<div id="property" class="w3-main w3-content w3-border-0 city w3-animate-opacity" style="max-width:4600px; display:none">  
+  <div   class="w3-row  scrollmenu " style="margin-top:30px; margin-left: 30px; margin-right:30px">
+      <img src="./img/property/DSC_5106.jpg" style="height:550px"  alt="">
+      <img src="./img/property/DSC_5140.jpg" style="height:550px"  alt="">
+      <img src="./img/property/DSC_5253.jpg" style="height:550px"  alt="">
+      <img src="./img/property/DSC_5256 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/property/DSC_7839 copy.jpg" style="height:550px"  alt="">
+      <img src="./img/property/Untitled_Panorama21.jpg" style="height:550px"  alt="">
+  </div>
+  </div><!--end Property-->    
+  
+<!-- Beauty Section -->
+<div id="beauty" class="w3-main w3-content w3-border-0 city w3-animate-opacity" style="max-width:4600px; display:none">  
+  <div   class="w3-row  scrollmenu " style="margin-top:30px; margin-left: 30px; margin-right:30px">
+      <img src="./img/beauty/Evelina-large.jpg" style="height:550px"  alt="">
+      <img src="./img/beauty/DSC_2195.jpg" style="height:550px"  alt="">
+      <img src="./img/beauty/DSC_2674.jpg" style="height:550px"  alt="">
+      <img src="./img/beauty/DSC_2698art.jpg" style="height:550px"  alt="">
+      <img src="./img/beauty/DSC_2948.jpg" style="height:550px"  alt="">
+      <img src="./img/beauty/DSC_3097Evelina.jpg" style="height:550px"  alt="">
+      <img src="./img/beauty/Evelin_Imanta2.jpg" style="height:550px"  alt="">
+  </div>
+</div><!--end Beauty-->    
+    
+  
+<!-- About Section -->
+<div id="about" class="w3-container w3-border-0 city w3-animate-opacity w3-text-grey " style="padding-top:130px; display:none">
+    <div class="w3-row" >
+      <div class="w3-third w3-display-container w3-hide-small" style="height:200px;">
+        <img class="w3-image w3-circle w3-display-right " src="./img/aigar.jpg" alt="together" style="height:200px; margin-top:100px;" >
+      </div>
+      
+       <!--mobile-->
+      <div class="w3-container w3-hide-medium w3-hide-large w3-center " style="height:200px;">
+        <img class="w3-image w3-circle  " src="./img/aigar.jpg" alt="me" style="height:200px; " >
+      </div>
+      <div class="w3-rest w3-display-container w3-padding-jumbo"> 
+        <p>
+          Aigar is an award winning, fiction-based photographer whose work focuses on fashion and portraiture. Aigar attended the University of Fable, and received a Bachelor's degree in Art with a specialization in Photography. His work has been featured in international publications and media.
+        </p>
+        <p class="">On twitter I'm <a href="#">@jeffG4ce</a> </p>
+        <p class="">You can send me a linkedIn message <a href="#">here</a> </p>
+        <p class="">On Instagram I'm  <a href="#">@jeffG4ce</a> </p>
+        <p class="">Send me an email: </p>
+        <div style=""><a href="mailto:aigars@aigarart.com" class="w3-button  w3-middle w3-grey w3-text-white w3-medium w3-margin-top  ">email</a></div>
+ 
+    </div>
+  </div>
+</div><!--end About-->
+  
+  
+<!-- Contact Section -->
+<div id="contact" class="w3-container w3-border-0 city w3-animate-opacity w3-text-grey " style="padding-top:130px; display:none">
+    <div class="w3-row" >
+      <div class="w3-third w3-display-container w3-hide-small" style="height:200px;">
+        <img class="w3-image w3-circle w3-display-right " src="./img/aigar.jpg" alt="together" style="height:200px; margin-top:100px;" >
+      </div>
+      
+       <!--mobile-->
+      <div class="w3-container w3-hide-medium w3-hide-large w3-center " style="height:200px;">
+        <img class="w3-image w3-circle  " src="./img/aigar.jpg" alt="me" style="height:200px; " >
+      </div>
+      <div class="w3-rest w3-display-container w3-padding-jumbo"> 
+        
+      <form method="post" action="form_sender.php"   class="w3-hide-small" style="width:70%">
+        <p>Contact us: aigars@aigarart.com</p>
+        <p><input class="w3-input w3-border"  type="text" placeholder="Name" required name="name"></p>
+        <p><input class="w3-input w3-border"  type="text" placeholder="Email" required name="email"></p>
+        <p><input class="w3-input w3-border"  type="text" placeholder="Message" required name="comments"></p>
+        <p>
+          <button class="w3-btn w3-padding w3-grey w3-text-white w3-block" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND 
+          </button>
+        </p>
+      </form>
+        
+      <!--form on mobile-->  
+      <form method="post" action="form_sender.php"   class="w3-hide-large w3-hide-medium">
+        <p>Contact us: aigars@aigarart.com</p>
+        <p><input class="w3-input w3-border"  type="text" placeholder="Name" required name="name"></p>
+        <p><input class="w3-input w3-border"  type="text" placeholder="Email" required name="email"></p>
+        <p><input class="w3-input w3-border"  type="text" placeholder="Message" required name="comments"></p>
+        <p>
+          <button class="w3-btn w3-block w3-padding w3-grey w3-text-white" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND 
+          </button>
+        </p>
+      </form>        
+  
+    </div>
+  </div>
+</div><!--end contact-->
+  
+ 
+  <div class="w3-display-bottomleft w3-padding-xxlarge w3-text-white w3-large">
+    <!--a href="https://upsource.tumblr.com/" style="text-decoration:none" class="fa fa-tumblr w3-hover-text-blue "></a-->
+    <!--a  href="https://twitter.com/upsourceworks" style="text-decoration:none" class="fa fa-twitter w3-hover-text-blue"></a-->
+  </div>
+  
+  <!-- display social icons on mobile below gallery-->
+  <div class=" w3-padding-large w3-text-black w3-hide-large" style="text-align:center">
+    <div class=" w3-padding-large w3-text-black">
+      <div class="w3-xlarge w3-section">
+       <a class="w3-bar-item w3-middle  w3-white " href="https://www.facebook.com/aigarart" style="margin-right:30px"> <i class="fa fa-facebook "></i></a>
+       <a class="w3-bar-item w3-middle  w3-white  " href="https://www.facebook.com/Real-estate-and-commercial-photographer-612833548916773/?ref=aymt_homepage_panel" style="align:center;width:37px"> <i class="fa fa-facebook-official "></i></a>
+      </div>
+    </div>        
+  </div>
+  
+<script>
+//highlights tabs along top when selected
+function openContent(evt, cityName) {
+  var i, x, y, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  y = document.getElementsByClassName("tablink");
+  
+  for (i = 0; i < y.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-grey";  
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";  
+}
+
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}  
+</script>
+
+
+<!--
+Google Analytics
+-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-71099660-1', 'aigarart.com');
+        ga('send', 'pageview');
+
+</script>   
+
+</body>
+</html>

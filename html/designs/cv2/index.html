@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<title>My Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="./img/favicon-star.ico" type="image/x-icon" />
+
+  <style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./img/face1.jpg");
+    min-height: 100%;
+}
+.w3-navbar li a {
+    padding: 16px;
+    float: left;
+}
+ #menu {
+  position: fixed;
+  left: 3%;
+  top: 30%;
+}   
+#menu2 {
+  position: fixed;
+  left: 3%;
+  top: 40%;
+}  
+.w3-navbar{
+    background:transparent;
+    border:none !important;
+}    
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar  w3-card-1" id="myNavbar">
+
+    <!-- Right-sided navbar links -->
+    <li class="w3-right w3-hide-small">
+      <a href="#about">About</a>
+      <a href="#experience"> Experience</a>
+      <a href="#interests"> Interests</a>
+      <a href="#contact"></i> Contact</a>
+    </li>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <li>
+      <a href="javascript:void(0)" class="w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Sidenav on small screens when clicking the menu icon -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()">About</a>
+  <a href="#experience" onclick="w3_close()">Experience</a>
+  <a href="#interests" onclick="w3_close()">Interests</a>
+  <a href="#contact" onclick="w3_close()">Contact</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container " id="home">
+  <div class="w3-display-middle  w3-padding-large w3-text-white">
+    <span class="w3-jumbo w3-hide-small">Geoff Talgiers</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Geoff Talgiers</span><br>
+    <div style="text-align:center;"><a href="#experience" class="w3-btn  w3-middle w3-hover-white w3-transparent w3-round-large w3-border w3-border-white w3_transparent w3-padding-large w3-large w3-margin-top  ">Start Here</a></div>
+  </div> 
+  <div class="w3-display-bottomleft w3-padding-xxlarge w3-text-white w3-large">
+    <a href="#" class="w3-hover-text-blue-grey"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-text-blue-grey"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="w3-hover-text-blue-grey"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="w3-hover-text-blue-grey"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-text-blue-grey"><i class="fa fa-linkedin"></i></a>
+  </div>
+</header>
+
+<a href="/designs"  id="menu" class="w3-btn w3-btn-floating-large w3-red"> <i class="fa fa-reply"></i></a>
+<a href="../downloads/cv2.zip"  onclick="ga('send', {hitType: 'event',  eventCategory: 'Template',  eventAction: 'download',  eventLabel: 'cv2'});" target="_blank" id="menu2" class="w3-btn w3-btn-floating-large w3-red"> <i class="fa fa-cloud-download"></i></a>
+
+<!-- About Section -->
+<div class="w3-container w3-padding-128" id="about">
+  <h2 class="w3-center">My Story</h2>
+  <p class="w3-center w3-large">I wanted to design cars when I was 9 </p>
+  
+  <p class="w3-center w3-padding-jumbo" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-handshake-o w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Team Player</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Hard Work</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+
+  <div style="text-align:center;"><a href="#experience" class="w3-btn  w3-middle w3-hover-black w3-text-black w3-transparent w3-round-large w3-border w3-border-black  w3-padding-large w3-large w3-margin-top  ">Experience</a></div>
+
+</div>
+
+<!-- Interests -->
+<div class="w3-container w3-light-grey w3-padding-64" id="interests">
+    <h2 class="w3-center w3-margin-bottom">Interests</h2>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h4>Volunteer Trip to Vietnam</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>  
+      <p><a href="#contact" class="w3-btn w3-round">Ask me about it</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="./img/bike6.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+<div class="w3-container w3-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="./img/soccer2.jpg" alt="soccer" width="700" height="394">
+    </div>
+    <div class="w3-col m6">
+      <h4>I play soccer on the weekends</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+     <p><a href="#contact" class="w3-btn w3-round">Join us next week</a></p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container w3-padding-128" id="experience">
+  <h2 class="w3-center">Experience</h2>
+  <p class="w3-center w3-large">Currently employed but seeking an opportunity beginning fall 2017</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l6  w3-margin-bottom">
+      <div class="w3-card-2">
+        <div class="w3-container">
+          <h3>Front End Developer / ABOnline.com</h3>
+          <p class="w3-opacity">2014 - <b>current</b></p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <ul class="w3-ul w3-hoverable">
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Managed 3 people</li>
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Increased revenues by 30%</li>
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Rebuilt internal proceses to become more efficient</li>
+          </ul>
+          <p><button class="w3-btn-block"></i> More</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l6  w3-margin-bottom">
+      <div class="w3-card-2">
+        <div class="w3-container">
+          <h3>Front End Developer / YouGo.com</h3>
+          <p class="w3-opacity">2012 - 2014</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <ul class="w3-ul w3-hoverable">
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Managed 3 people</li>
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Increased revenues by 30%</li>
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Rebuilt internal proceses to become more efficient</li>
+          </ul>
+          <p><button class="w3-btn-block"></i> More</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l6  w3-margin-bottom">
+      <div class="w3-card-2">
+        <div class="w3-container">
+          <h3>Developer / Macys.com</h3>
+          <p class="w3-opacity">2009 - 2012</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <ul class="w3-ul w3-hoverable">
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Managed 3 people</li>
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Increased revenues by 30%</li>
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Rebuilt internal proceses to become more efficient</li>
+          </ul>
+          <p><button class="w3-btn-block"></i> More</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l6  w3-margin-bottom">
+      <div class="w3-card-2">
+        <div class="w3-container">
+          <h3>Intern / Macys.com</h3>
+          <p class="w3-opacity">2008 - 2009</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <ul class="w3-ul w3-hoverable">
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Managed 3 people</li>
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Increased revenues by 30%</li>
+              <li><i class="fa fa-circle-o w3-margin-right"></i>Rebuilt internal proceses to become more efficient</li>
+          </ul>
+          <p><button class="w3-btn-block"></i> More</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Years Experience
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">2+</span>
+    <br>Languages Spoken
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">20+</span>
+    <br>LinkedIn Reco's
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-128 w3-light-grey" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-btn w3-padding" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-half">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <i class="fa fa-flickr w3-hover-text-red"></i>
+    <i class="fa fa-instagram w3-hover-text-purple"></i>
+    <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  </div>
+  <p>Powered by <a href="http://upsourceworks.com/designs" title="upsource" target="_blank" class="w3-hover-text-green">upsource designs</a></p>
+</footer>
+ 
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidenav when clicking the menu icon
+var mySidenav = document.getElementById("mySidenav");
+
+function w3_open() {
+    if (mySidenav.style.display === 'block') {
+        mySidenav.style.display = 'none';
+    } else {
+        mySidenav.style.display = 'block';
+    }
+}
+
+// Close the sidenav with the close button
+function w3_close() {
+    mySidenav.style.display = "none";
+}
+  
+
+</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3v53rZu3boAbKMBEPmn62Q0rgT0knAOw&callback=myMap"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  
+<script> 
+  $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+}); 
+  
+  
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('.w3-navbar');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('.w3-navbar').css('background-color', 'white');
+       } else {
+          $('.w3-navbar').css('background-color', 'transparent');
+       }
+   });
+});  
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91834286-1', 'auto');
+  ga('send', 'pageview');
+
+</script>   
+
+</body>
+</html>
